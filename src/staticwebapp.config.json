@@ -1,0 +1,18 @@
+{
+    "routes": [
+      {
+        "route": "/*",
+        "allowedRoles": ["authenticated"]
+      },
+      {
+        "route": "/loggedout*",
+        "allowedRoles": ["anonymous"]
+      }
+    ],
+    "responseOverrides": {
+      "401": {
+        "statusCode": 302,
+        "redirect": "/.auth/login/aad?post_login_redirect_url=/"
+      }
+    }
+}

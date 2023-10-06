@@ -29,8 +29,14 @@ az staticwebapp create \
     -n $APP_NAME \
     -g $RG \
     -l $LOCATION \
+    -sku Standard \
     -s https://github.com/dsanchor/swa-demo-auth \
     -b main \
     --app-location "src" \
     --login-with-github 
 ```
+
+## Add authentication 
+
+https://learn.microsoft.com/en-us/azure/static-web-apps/authentication-authorization
+
