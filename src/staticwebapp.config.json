@@ -5,11 +5,11 @@
         "allowedRoles": ["anonymous"]
       },
       {
-        "route": "/group1*",
+        "route": "/group1/*",
         "allowedRoles": ["role1"]
       },
       {
-        "route": "/group2*",
+        "route": "/group2/*",
         "allowedRoles": ["role2"]
       },
       {
