@@ -31,5 +31,6 @@ az staticwebapp create \
     -l $LOCATION \
     -s https://github.com/dsanchor/swa-demo-auth \
     -b main \
-    --login-with-github
+    --app-location "src" \
+    --login-with-github 
 ```
