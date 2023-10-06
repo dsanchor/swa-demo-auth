@@ -1,12 +1,12 @@
 {
     "routes": [
       {
-        "route": "/*",
-        "allowedRoles": ["authenticated"]
-      },
-      {
         "route": "/loggedout*",
         "allowedRoles": ["anonymous"]
+      },
+      {
+        "route": "/*",
+        "allowedRoles": ["authenticated"]
       }
     ],
     "responseOverrides": {
